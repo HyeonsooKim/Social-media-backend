@@ -63,6 +63,7 @@ CORS_ALLOW_HEADERS = (
 
 LOCAL_APPS = [
     # Add local apps
+    'apps.user.apps.UserConfig'
 ]
 
 DJANGO_APPS = [
@@ -84,7 +85,7 @@ THIRD_PARTY_APPS = [
 
 INSTALLED_APPS = LOCAL_APPS + DJANGO_APPS + THIRD_PARTY_APPS
 
-# AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'user.User'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
